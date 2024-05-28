@@ -16,13 +16,13 @@ public class Question1 {
     // 시스아웃 대신에 버퍼드 리더 속도차이 존재
     System.out.println("Hello, World!");
 
-    try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out))) {
-      writer.write("Hello, World!");
-      writer.newLine();  // 줄바꿈
-      writer.flush();    // 버퍼를 비웁니다
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
+//    try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out))) {
+//      writer.write("Hello, World!");
+//      writer.newLine();  // 줄바꿈
+//      writer.flush();    // 버퍼를 비웁니다
+//    } catch (IOException e) {
+//      e.printStackTrace();
+//    }
   }
 
 }
