@@ -4,8 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// 1000
-// 0528커푸피
+// 1001
+
 public class Question3 {
 
   public static void main(String[] args) {
@@ -20,13 +20,23 @@ public class Question3 {
         return;
       }
 
+      if (Integer.parseInt(numbersStr[0]) <= 0) {
+          System.out.println("A는 양수");
+          return;
+      }
+
+      if (Integer.parseInt(numbersStr[1]) >= 10) {
+          System.out.println("B는 10미만");
+          return;
+      }
+
       try {
           // 두 숫자로 변환
           int num1 = Integer.parseInt(numbersStr[0]);
           int num2 = Integer.parseInt(numbersStr[1]);
 
           // 두 숫자의 합 계산
-          int sum = num1 + num2;
+          int sum = num1 - num2;
 
           // 결과 출력
           System.out.print(sum);
